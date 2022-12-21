@@ -1,0 +1,150 @@
+@use 'do_config' as *;
+@use '../custom/do' as *;
+@use 'do_color_v2' as *;
+@use "sass:math";
+// Typo
+
+* {
+  box-sizing: border-box;
+}
+
+
+html {
+  
+  line-height: 1.32; 
+  -webkit-text-size-adjust: 100%; 
+  font-size: 16px;
+  font-size: clamp(10px, 1vw, 20px);  
+  
+}
+
+body {
+
+  font-size: 1rem;
+  color: do-hsl('contraste');
+  -webkit-text-size-adjust: 100%; 
+  -webkit-tap-highlight-color: do-hsl('main',0.2);
+  margin: 0;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,p {
+  margin: 0px;
+  margin-block-end: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: do-hsl('main');
+}
+
+.do-fw-bold {
+  font-weight: var(--fw-bold);
+}
+.do-fw-medium {
+  font-weight: var(--fw-medium);
+}
+.do-fw-regular {
+  font-weight: var(--fw-regular);
+}
+.do-fw-light {
+  font-weight: var(--fw-light);
+}
+
+.reset-y {
+  line-height: 0.75;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.press {
+  line-height: 1.25;
+}
+.expend {
+  line-height: 1.5;
+}
+.txt-right, .txt-end {
+  text-align: right;
+}
+
+.font-size-inherit{
+  font-size: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: do-hsl('contraste',1);
+  transition-property: background-color, color, box-shadow;
+  transition-duration: math.div($duration, 2);
+  transition-timing-function: $easing;
+  &:hover {
+    text-decoration: none;
+    color: do-hsl('main',1);
+  }
+}
+
+a.reset{
+  color: do-hsl('contraste',1);
+  &:hover {
+    color: do-hsl('contraste',0.8);
+  }
+}
+
+.do-txt {
+  a {
+    text-decoration: underline;
+    font-weight: bold;
+    color: do-hsl('contraste') !important;
+
+    &:hover {
+      color: do-hsl('main') !important;
+      background-color: do-hsl('second') !important;
+    }
+  }
+}
+
+ul.reset {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  li {
+    list-style: none;
+  }
+}
+li.reset {
+  list-style: none;
+}
+ul.custom li {
+  @extend .do-pl-sm !optional;
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    @extend .trans-y-middle !optional;
+    @extend .do-w-xxs !optional;
+    @extend .do-h-xxs !optional;
+    @extend .do-br-md !optional;
+    @extend .do-bg-main-color !optional;
+  }
+}
+
+@media screen and (min-width: $lg) {
+  
+}
+
+.uppercase, .ttu {
+  text-transform: uppercase;
+}
+
+
+.nowrap, .nw {
+  white-space: nowrap;
+}
