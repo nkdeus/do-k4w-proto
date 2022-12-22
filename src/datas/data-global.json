@@ -2,6 +2,41 @@
     "titre" : "k4w",
     "logo" : "imgs/logo.png",
     "rootPath" : "http://127.0.0.1:5500/dist/",
+    "cards":[
+      {
+        "card":"epic.png",
+        "power":"10",
+        "level":"35",
+        "bt":"UPGRADE"
+      },			{
+        "card":"uncommon.png",
+        "power":"10",
+        "level":"35",
+        "bt":"UPGRADE"
+      },
+      {
+        "card":"epic.png",
+        "power":"10",
+        "level":"35",
+        "bt":"UPGRADE"
+      },			{
+        "card":"uncommon.png",
+        "power":"10",
+        "level":"35",
+        "bt":"UPGRADE"
+      },
+      {
+        "card":"epic.png",
+        "power":"10",
+        "level":"35",
+        "bt":"UPGRADE"
+      },			{
+        "card":"uncommon.png",
+        "power":"10",
+        "level":"35",
+        "bt":"UPGRADE"
+      }	
+    ],
     "nav" :{
       "menu":[
           {

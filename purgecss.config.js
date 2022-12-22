@@ -2,12 +2,12 @@
 
 
 module.exports = {
-    content: ['dist/**/*.html'],
+    content: ['dist/*.html'],
     css: ['src/css/styles.css'],
     keyframe: true,
     output: 'dist/css/styles.css',
     rejected: true,
-    variables:true,
+    variables: true,
     safelist: {
       standard: [/^do-event-/,/^get-progress-/],
       deep: [],

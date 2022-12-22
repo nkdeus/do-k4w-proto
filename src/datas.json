@@ -2,40 +2,43 @@
 	"titre": "k4w",
 	"logo": "imgs/logo.png",
 	"rootPath": "http://127.0.0.1:5500/dist/",
-	"cards":[
+	"cards": [
 		{
-			"card":"epic.png",
-			"power":"10",
-			"level":"35",
-			"bt":"UPGRADE"
-		},			{
-			"card":"uncommon.png",
-			"power":"10",
-			"level":"35",
-			"bt":"UPGRADE"
+			"card": "epic.png",
+			"power": "10",
+			"level": "35",
+			"bt": "UPGRADE"
 		},
 		{
-			"card":"epic.png",
-			"power":"10",
-			"level":"35",
-			"bt":"UPGRADE"
-		},			{
-			"card":"uncommon.png",
-			"power":"10",
-			"level":"35",
-			"bt":"UPGRADE"
+			"card": "uncommon.png",
+			"power": "10",
+			"level": "35",
+			"bt": "UPGRADE"
 		},
 		{
-			"card":"epic.png",
-			"power":"10",
-			"level":"35",
-			"bt":"UPGRADE"
-		},			{
-			"card":"uncommon.png",
-			"power":"10",
-			"level":"35",
-			"bt":"UPGRADE"
-		}	
+			"card": "epic.png",
+			"power": "10",
+			"level": "35",
+			"bt": "UPGRADE"
+		},
+		{
+			"card": "uncommon.png",
+			"power": "10",
+			"level": "35",
+			"bt": "UPGRADE"
+		},
+		{
+			"card": "epic.png",
+			"power": "10",
+			"level": "35",
+			"bt": "UPGRADE"
+		},
+		{
+			"card": "uncommon.png",
+			"power": "10",
+			"level": "35",
+			"bt": "UPGRADE"
+		}
 	],
 	"nav": {
 		"menu": [
@@ -68,24 +71,24 @@
 				"icone": "EQUIPEMENT.png"
 			},
 			{
-				"title": "UPGRADE",
-				"icone": "UPGRADE.png"
+				"title": "EQUIPEMENT",
+				"icone": "EQUIPEMENT.png"
 			},
 			{
-				"title": "INVENTORY",
-				"icone": "INVENTORY.png"
+				"title": "EQUIPEMENT",
+				"icone": "EQUIPEMENT.png"
 			},
 			{
-				"title": "SHOP",
-				"icone": "SHOP.png"
+				"title": "EQUIPEMENT",
+				"icone": "EQUIPEMENT.png"
 			},
 			{
-				"title": "EXCHANGE",
-				"icone": "EXCHANGE.png"
+				"title": "EQUIPEMENT",
+				"icone": "EQUIPEMENT.png"
 			},
 			{
-				"title": "LEADERBOARD",
-				"icone": "LEADERBOARD.png"
+				"title": "EQUIPEMENT",
+				"icone": "EQUIPEMENT.png"
 			}
 		],
 		"copyright": "© Ulysse-2029"
