@@ -1,12 +1,53 @@
 {{> head}}
 {{> nav}}
+{{> gamenav}}
+<div class="pof do-full top left do-bg-extra-color overflow-hidden">
+    <img src="{{asset 'imgs/bg.jpg'}}" class="do-full do-object-fit:cover" alt="">
+</div>
 
-<section class="por do-px-smart-xxxl do-py-xxl por do-z-1 do-h-10-vh">
 
-    <h1>K4W</h1>
+<section class="por do-px-smart-xxxl do-py-xl md:do-py-xl por do-z-8 do-h-10-vh xxl:do-h-9-vh overflow-hidden do-flex do-justify-content-center do-align-items-center">
+
+    <!-- CADRE -->
+    <div class="do-w-10 do-w-8-max-rem do-h-10 do-py-md lg:do-px-sm por">
+        <div class="poa do-z-2 top-sm-rem md:top-lg-rem lg:top-n-xs-rem left-middle trans-x-middle-y-after do-bg-main-color">
+            <img src="{{asset 'imgs/title-bg.png'}}" class="do-h-xl poa do-w-auto center" alt="">
+            <span class="uppercase do-fw-bold do-mb-0 do-fs-sm poa center do-z-3 do-blur-1 por mix-overlay">pageTitle</span>
+            <h2 class="uppercase do-mb-0 do-fs-sm do-z-2 do-trans-y-n-2 por do-o-5">pageTitle</h2>
+        </div>
+        <img src="{{asset 'imgs/cadre.png'}}" class="do-hide lg:do-block do-w-auto do-h-11 lg:do-w-11 lg:do-h-11 poa center" alt="">
+        <div class="do-h-10 do-w-10 por do-z-1 do-overflow-auto ">
+            <div class="_do-h-12-vh do-h-auto do-p-sm do-txt-second-color do-w-10  do-flex do-x do-wrap do-align-items-center do-justify-content-center">
+
+                <!-- CONTENT -->
+
+                {{#cards}}
+                    <div class="do-w-5 por do-px-sm do-py-sm do-mb-xs do-flex do-y do-align-items-center sm:do-w-xxxl">
+                        <img src="{{asset 'imgs/card-bg.png'}}" class="do-w-9 do-o-5 poa center do-h-9" alt="">
+                        <img src="{{asset 'imgs/cards/'}}{{card}}" class="do-w-10 do-mt-xs por do-h-auto" alt="">
+                        <div class="do-w-10 do-px-sm do-flex do-x  do-justify-content-space-between do-align-items-center">
+                            <div class="do-fs-xs por do-z-1 do-py-xxs do-flex do-align-items-center">
+                                <img src="{{asset 'imgs/power.svg'}}" class="do-h-sm md:do-h-xs tween-trans hover:do-scale-12 tween-duration-1 tween-ease-in-out" alt="">
+                                <span class="do-ml-xs do-fs-xxs do-txt-second-color">{{power}}</span>
+                            </div>
+
+                            <div class="do-fs-xs por do-z-1 do-py-xxs do-flex do-align-items-center">
+                                 <span class="do-mr-xs do-fs-xxs do-txt-second-color">{{level}}</span>
+                                <img src="{{asset 'imgs/lvl/lvl-2.svg'}}" class="do-w-sm md:do-w-xs tween-trans hover:do-scale-12 tween-duration-1 tween-ease-in-out" alt="">
+                              
+                            </div>
+
+                        </div>
+                        <a href="" class="por do-px-sm do-py-xxs do-mb-sm do-br-xxs do-bg-contraste-color-4  do-bg-contraste-color:hover tween-duration-1 do-txt-second-color"><span>Upgrade</span></a>
+
+                    </div>
+   
+                {{/cards}}
+            </div>
+            
+        </div>
+    </div>
   
 </section>
 
-
-{{> footer}}
 {{> foot}}

@@ -1,13 +1,49 @@
 
-  <div id="nav" class="do-w-10 pof do-px-smart-lg do-z-9 do-flex do-justify-content-space-between do-align-items-center tween-trans scroll-down:trans-y-before">
-    <a id="logo" href="{{asset ''}}" class="do-py-xxs por do-z-2 tween-trans scroll-down:trans-y-after">
-      <div class="por do-h-md tween-trans scroll-down:do-scale-5 transform-origin-left">
-        {{> assets/logo}}
+  <div id="nav" class="do-bg-contraste-color-grad-linear-0 do-w-10 pof do-px-smart-lg do-z-5 do-flex do-justify-content-space-between do-align-items-center do-txt-second-color">
+    
+    <div class="poa top left do-z-0 do-o-10 do-w-10 overflow-hidden lg:do-w-5 pointer-events-none lg:do-trans-x-n-2">
+      <img src="{{asset 'imgs/deco.png'}}" class="do-trans-x-n-2 do-o-5 do-w-14 lg:do-w-10" alt="">
+    </div>
+    <!-- LEFT -->
+    <div class="do-bg-second-color-0 por do-z-1 do-w-10 do-flex do-x do-align-items-center do-gap-sm">
+      <a id="logo" href="{{asset ''}}" class="por hover do-py-xs">
+          <div class="por do-h-md md:do-h-lg">
+            <img src="{{asset 'imgs/logo.png'}}" class="do-h-10" alt="">
+          </div>
+            <div class="do-o-5 hover:do-o-8 transform-origin-bottom-center do-rotation-3 hover:do-rotation-0 do-ease-in tween-all do-block mix-lighter poa do-wh-lg do-w-xl do-br-lg do-bg-second-color do-blur-4 top left"></div>
+   
+      </a>
+      <div class="md:do-o-7 do-o-10:hover tween-o do-flex do-x md:do-y do-fs-xxs">
+        <span class="por do-px-xxs md:do-p-0"><div class="do-wh-sm do-br-xl do-block md:do-hide do-bg-extra-color poa center do-z-0"></div><strong><span class="por do-txt-contraste-color md:do-txt-second-color">G</span><span class="do-hide md:do-inline-block">lobal Hashrate</span></strong></span>
+        <span>000000</span>
       </div>
-    </a>
- 
-    <div data-do-mu="{{nav.background}}" class="poa do-full do-bg-second-color top left pointer-events-none do-z-1"></div>
-    <div data-do-mu="{{nav.background}}" class="poa do-w-10 do-h-px-lg do-blur-1 do-bg-contraste-color bottom left pointer-events-none do-z-0 scroll-down:do-o-0"></div>
-  </div>
+      <div class="md:do-o-7 do-o-10:hover tween-o do-flex do-x md:do-y do-fs-xxs">
+        <span class="por do-px-xxs md:do-p-0"><div class="do-wh-sm do-br-xl do-block md:do-hide do-bg-contraste-color poa center do-z-0"></div><strong><span class="por">Y</span><span class="do-hide md:do-inline-block">our Hashrate</span></strong></span>
+        <span>000000</span>
+      </div>
+    </div>
+
+    <!-- CENTER -->
+    <div class="md:do-o-7 do-o-10:hover tween-o do-w-10 do-flex do-x do-align-items-center do-justify-content-center do-gap-sm poa lg:por left do-bg-contraste-color-3 lg:do-bg-transparent trans-y-after do-py-xs lg:do-reset-trans tween-all">
+      {{#nav.tokens}}
+      <div class="do-fs-xs hover do-flex do-align-items-center por">
+        <img src="{{asset 'imgs'}}/{{icone}}" class="por do-h-md do-scale-9 hover:do-scale-11 tween-trans do-ease-out md:do-h-lg" alt="">
+        <span class="do-ml-xs por "><strong></b>{{count}}</strong></span>
+        <div class="do-o-2 hover:do-o-8 transform-origin-bottom-center do-rotation-3 hover:do-rotation-0 do-ease-in tween-all do-block mix-lighter poa do-wh-md do-br-lg do-bg-second-color-10 do-blur-2 top left"></div>
+      </div>
+      {{/nav.tokens}}
+    </div>
+
+    <!-- RIGHT -->
+    <div class="md:do-o-7  do-o-10:hover tween-o do-bg-second-color-0 md:do-w-10 do-flex do-x do-align-items-center do-justify-content-end do-gap-sm ">
+      {{#nav.menu}}
+      <a href="#" class="hover do-fs-xs do-py-xxs do-flex do-align-items-center">
+        <img src="{{asset 'imgs/'}}/{{icone}}" class="do-h-sm do-scale-xs md:do-h-xs tween-trans hover:do-scale-15 tween-duration-1 tween-ease-in-out" alt="">
+        <span class="do-ml-xs do-fs-xxs do-txt-second-color do-hide md:do-flex">{{title}}</span>
+      </a>
+      {{/nav.menu}}
+    </div>
+  
+   </div>
 
 
